@@ -8,10 +8,14 @@ Authors: Kunhao Zheng, Stanislas Polu, David Renshaw, OpenAI GPT-f
 import MiniF2F.Minif2fImport
 open BigOperators Real Nat Topology
 
+...
+
 theorem Set.left_not_mem_uIoo {a b : ℝ} :
     a ∉ Set.uIoo a b := by
   rintro ⟨h1, h2⟩
   exact (left_lt_sup.mp h2) (le_of_not_le (inf_lt_left.mp h1))
+
+...
 
 theorem Set.right_not_mem_uIoo {a b : ℝ} :
     b ∉ Set.uIoo a b := by
