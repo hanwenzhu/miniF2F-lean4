@@ -15,8 +15,7 @@ theorem Set.left_not_mem_uIoo {a b : ℝ} :
 
 theorem Set.right_not_mem_uIoo {a b : ℝ} :
     b ∉ Set.uIoo a b := by
-  rintro ⟨h1, h2⟩
-  exact (right_lt_sup.mp h2) (le_of_not_le (inf_lt_right.mp h1))
+  rw [Set.uIoo_def]
 
 
 have hd : d = 15 / 2 := by
