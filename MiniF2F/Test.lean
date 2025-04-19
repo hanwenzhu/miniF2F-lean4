@@ -9,6 +9,12 @@ import MiniF2F.Minif2fImport
 open BigOperators Real Nat Topology
 
 
+have hd : d = 15 / 2 := by
+  linarith
+have ha : a = -15 := by
+  linarith [h0, hd]
+linarith [ha, hd]
+
 theorem mathd_algebra_478
   (b h v : ℝ)
   (h₀ : 0 < b ∧ 0 < h ∧ 0 < v)
