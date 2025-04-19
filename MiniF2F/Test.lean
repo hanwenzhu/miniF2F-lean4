@@ -1019,7 +1019,9 @@ theorem mathd_algebra_354
   (a d : ℝ)
   (h₀ : a + 6 * d = 30)
   (h₁ : a + 10 * d = 60) :
-  a + 20 * d = 135 := by sorry
+  a + 20 * d = 135
+
+by linarith
 
 theorem aime_1984_p7
   (f : ℤ → ℤ)
